@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+
+    <!--Importing the style file.-->
+    <link rel="stylesheet" href="style.css">
+    <!--Importing the JavaScript file.-->
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!--This is my header.-->
+    <div class="firstDiv">
+        <h1>TAKE NOTE</h1>
+    </div>
+
+    <!--This is my main div that the user write his notes.-->
+    <div class="mainDiv">
+        <h2>Write your notes</h2>
+        <form action="">
+            Notes <br>
+            <!--Getting input from the user.-->
+            <textarea name="notes" id="textArea" cols="30" rows="10" placeholder="Write your note here..."></textarea>
+            <br>
+
+            <!--Giving the all check boxes' id.-->
+            week1<input type="checkbox" id="week1"> <br>
+            week2<input type="checkbox" id="week2"> <br>
+            week3<input type="checkbox" id="week3"> <br>
+            week4<input type="checkbox" id="week4"> <br>
+
+        </form>
+
+        <button id="saveButton" onclick="weekSelector()">Save</button>
+        <!--When saveButton cliked weekSelector() function will work.-->
+    </div>
+    <div>
+        <table class="week1Table">
+            <!--Giving table id.-->
+            <h2>Week 1</h2>
+            <tr id="id1">
+                <!--Giving table row id.-->
+                <th>week1</th>
+            </tr>
+            <!--This will contain the notes that the user write. That's why they are emty-->
+            <tr>
+                <td id="1"></td>
+            </tr>
+        </table>
+
+        <table class="week2Table">
+            <h2>Week 2</h2>
+            <tr id="id2">
+                <th>week2</th>
+            </tr>
+            <!--This will contain the notes that the user write. That's why they are emty-->
+            <tr>
+                <td id="2"></td>
+            </tr>
+        </table>
+
+        <table class="week3Table">
+            <h2>Week 3</h2>
+            <tr id="id3">
+                <th>week3</th>
+            </tr>
+            <!--This will contain the notes that the user write. That's why they are emty-->
+            <tr>
+                <td id="3"></td>
+            </tr>
+        </table>
+
+        <table class="week4Table">
+            <h2>Week 4</h2>
+            <tr id="id4">
+                <th>week4</th>
+            </tr>
+            <!--This will contain the notes that the user write. That's why they are emty-->
+            <tr>
+                <td id="4"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

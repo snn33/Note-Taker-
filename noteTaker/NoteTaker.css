@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray; /* Giving the background color*/
+}
+
+div.firstDiv {
+    background-color: lightslategrey; /* Giving the background color for first div*/
+}
+
+/* Giving the table's border and collapsing them, and giving table head(th) and table data(td) vorder and color and also place*/
+table {
+    border: 4px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    th, td {
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+    }
+    th {
+    background-color: lightgray;
+    }
